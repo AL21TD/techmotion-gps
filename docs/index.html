@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- clarity -->
+    <!-- <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "oippfass5f");
+    </script> -->
+    <!-- Weglot -->
+
+    <!-- <link rel="alternate" hreflang="en" href="https://techmotion-gps.com">
+    <link rel="alternate" hreflang="de" href="https://de.techmotion-gps.com">
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+    <script>
+        Weglot.initialize({
+            api_key: 'wg_07ac074441f00f88616555e02e77e7e29'
+        });
+    </script> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TechMotion GPS</title>
+
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <section>
+        <div id="banner" tabindex="-1"
+            class="flex justify-between py-3 px-4 w-full bg-gray-100 border border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+            <div class="flex items-center mx-auto">
+                <p class="text-sm font-medium text-gray-900 md:my-0 dark:text-white">
+                    <span
+                        class="hidden md:inline-flex bg-blue-400 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">New</span>
+                    Optimize your fleet with our advanced GPS tracking devices!
+                    <a href="#gps-devices"
+                        class="inline-flex items-center ml-0 text-sm font-medium text-primary-600 md:ml-2 dark:text-primary-500 hover:underline">
+                        Learn More
+                        <svg class="ml-1 w-4 h-4 text-primary-600 dark:text-primary-500" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+            <button data-collapse-toggle="banner" type="button"
+                class="inline-flex justify-center items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
+                id="close-banner">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- header section -->
+    <header id="main-header" class="sticky top-0 z-50 transition-colors duration-300">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-6 dark:bg-gray-800">
+            <!-- Adjusted padding for thicker header -->
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="#" class="flex items-center lg:-ml-[100px]"> <!-- Apply negative margin for large screens -->
+                    <span href="#home"
+                        class="text-3xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-blue-400 sm:text-4xl">
+                        TechMotion
+                    </span>
+                    <span
+                        class="text-3xl font-extrabold leading-none tracking-tight text-blue-400 dark:text-white sm:text-4xl"
+                        style="margin-left: 10px;">
+                        GPS
+                    </span>
+                </a>
+
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+
+                        <li>
+                            <a href="#machinery"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Machinery
+                                Category</a>
+                        </li>
+                        <li>
+                            <a href="#spareparts"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Spare
+                                Parts</a>
+                        </li>
+                        <li>
+                            <a href="#regions"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Regions</a>
+                        </li>
+                        <li>
+                            <a href="#team"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="block py-2 pr-4 pl-3 text-gray-700 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                                aria-current="page">Contact</a>
+                        </li>
+
+                        <!-- New Menu Items -->
+                        <li>
+                            <a href="#devices"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Geräte</a>
+                        </li>
+                        <li>
+                            <a href="#pricing"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Preise</a>
+                        </li>
+                        <li>
+                            <a href="#features"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Funktionen</a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About
+                                us</a>
+                        </li>
+                        <li>
+                            <a href="#help"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section with looping video background for GPS Fleet Management -->
+    <section class="relative bg-gray-700 bg-blend-multiply">
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <source
+                src="https://techmotion-gps.s3.eu-central-1.amazonaws.com/3d-rendering-top-view-city-map-with-navigator-line-2024-02-28-05-38-23-utc.mov"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="relative py-8 px-4 mx-auto max-w-screen-xl text-white lg:py-16 z-10">
+            <div class="mb-6 max-w-screen-lg lg:mb-0">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
+                    Optimize Your Fleet with GPS Tracking
+                </h1>
+                <p class="mb-6 font-light text-gray-300 lg:mb-8 md:text-lg lg:text-xl">
+                    Maximize efficiency and safety with real-time GPS fleet management. Track vehicles, reduce fuel
+                    costs, and improve operations with cutting-edge tracking solutions tailored for your business.
+                </p>
+                <a href="#learn-more" class="inline-flex items-center py-3 px-5 font-medium text-center text-white rounded-lg bg-blue-400 
+            hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-900 dark:bg-primary-600 
+            dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                    Learn more about our GPS solutions
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="grid gap-8 pt-8 lg:pt-12 mt-8 lg:mt-12 border-t border-gray-600 sm:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <h2 class="mb-1 text-lg font-bold">Real-time Tracking</h2>
+                    <p class="mb-1 text-sm text-gray-300">Monitor your fleet's location 24/7 and ensure optimal route
+                        efficiency.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-semibold text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <h2 class="mb-1 text-lg font-bold">Fuel Optimization</h2>
+                    <p class="mb-1 text-sm text-gray-300">Reduce fuel consumption by analyzing driver behavior and route
+                        data.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-semibold text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <h2 class="mb-1 text-lg font-bold">Safety Improvements</h2>
+                    <p class="mb-1 text-sm text-gray-300">Enhance driver safety with instant alerts and performance
+                        tracking.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-semibold text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <h2 class="mb-1 text-lg font-bold">Maintenance Alerts</h2>
+                    <p class="mb-1 text-sm text-gray-300">Get timely notifications to prevent costly repairs with
+                        predictive maintenance.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-semibold text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- hero section -->
+
+
+
+    <!-- Type of Vehicles -->
+    <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-16" id="machinery">
+        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+            <div class="sm:flex sm:items-center sm:justify-between sm:gap-4">
+                <p class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Construction Machinery You
+                    Might Be Interested In</p>
+
+                <a href="#" title=""
+                    class="mt-4 hidden rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 sm:mt-0 lg:inline-block"
+                    role="button"> View All Categories </a>
+            </div>
+
+            <div
+                class="mb-4 mt-6 grid grid-cols-1 gap-4 text-center sm:mt-8 sm:grid-cols-2 lg:mb-0 lg:grid-cols-4 xl:gap-8">
+                <!-- Excavator -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon1.jpg" alt="Excavator"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Excavator</p>
+                </a>
+
+                <!-- Mini Excavator -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon2.png" alt="Mini Excavator"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Mini Excavator</p>
+                </a>
+
+                <!-- Bulldozer -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon3.jpg" alt="Bulldozer"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Bulldozer</p>
+                </a>
+
+                <!-- Dump Truck -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon4.jpg" alt="Dump Truck"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Dump Truck</p>
+                </a>
+
+                <!-- Wheel Loader -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon5.jpg" alt="Wheel Loader"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Wheel Loader</p>
+                </a>
+
+                <!-- Motor Grader -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/ion6.jpg" alt="Motor Grader"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Motor Grader</p>
+                </a>
+
+                <!-- Roller -->
+                <a href="#"
+                    class="grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon7.jpg" alt="Roller"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Roller</p>
+                </a>
+
+                <!-- Special Machines -->
+                <a href="#"
+                    class="relative grid place-content-center space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <!-- <img src="https://cat-machinery.s3.eu-central-1.amazonaws.com/icon8.jpg" alt="Special Machines"> -->
+                    <p class="text-lg font-semibold text-gray-900 dark:text-white">Special Machines</p>
+                </a>
+            </div>
+
+            <a href="#" title=""
+                class="mt-4 block w-full rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 hover:underline hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 sm:mt-0 lg:hidden"
+                role="button"> View All Categories </a>
+        </div>
+    </section>
+
+    <!-- spare parts -->
+    <section class="bg-white dark:bg-gray-900" id="spareparts">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Your Trusted
+                    Source for Caterpillar Spare Parts</h2>
+                <p class="mb-4">As a leading partner for Caterpillar machinery in Austria, we provide direct access to
+                    genuine spare parts from top manufacturers, ensuring high quality and fast delivery.</p>
+
+            </div>
+            <div class="mt-4 font-light text-gray-500 sm:text-lg lg:mt-0 dark:text-gray-400">
+                <p class="mb-4">Looking for specific Caterpillar parts? Our team is ready to help you source and deliver
+                    the right components quickly.</p>
+                <p>If you have any inquiries, please <strong>contact us</strong>. We are committed to keeping your
+                    operations running smoothly with the parts you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- countries -->
+    <section class="relative bg-white dark:bg-gray-900" id="regions">
+        <!-- Responsive Image for small screens -->
+        <img class="w-full md:hidden" src="https://cat-machinery.s3.eu-central-1.amazonaws.com/Map.png"
+            alt="dashboard image">
+
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <div class="mt-4 md:mt-0 z-10">
+                <h3 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Active Regions</h3>
+                <div class="mb-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-gray-500 dark:text-gray-400">
+                            <ul class="list-disc pl-5">
+                                <li>Hungary</li>
+                                <li>Poland</li>
+                                <li>Slovenia</li>
+                                <li>Croatia</li>
+                                <li>Romania</li>
+                                <li>Bulgaria</li>
+                                <li>Italy</li>
+                                <li>Malta</li>
+                                <li>Spain</li>
+                            </ul>
+                        </div>
+                        <div class="text-gray-500 dark:text-gray-400">
+                            <ul class="list-disc pl-5">
+                                <li>Greece</li>
+                                <li>Slovakia</li>
+                                <li>Czech Republic</li>
+                                <li>Serbia</li>
+                                <li>Albania</li>
+                                <li>Bosnia</li>
+                                <li>Norway</li>
+                                <li>Turkey</li>
+                                <li>Ukraine</li>
+                            </ul>
+                        </div>
+                        <div class="text-gray-500 dark:text-gray-400">
+                            <p>Rest of the EU & International - inquiries welcome.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Delivery Services</h3>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">We understand that timely
+                    delivery is crucial for your operations. That's why we offer comprehensive delivery services for all
+                    our machinery. Our dedicated logistics team ensures that your equipment arrives safely and on
+                    schedule, no matter where you are located in our active regions.</p>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">From the moment you place your
+                    order to the time your machinery arrives at your site, we handle every aspect of the delivery
+                    process. Whether you need equipment for immediate use or to plan for future projects, we’ve got you
+                    covered.</p>
+
+                <a href="#contact"
+                    class="inline-flex items-center text-gray-700 bg-blue-400 hover:bg-yellow-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                    Get started
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Responsive Image for large screens -->
+            <img class="absolute left-[70%] transform -translate-x-1/2 top-[8%] max-w-[60%] h-auto z-0 hidden md:block"
+                src="https://cat-machinery.s3.eu-central-1.amazonaws.com/Map.png" alt="dashboard image">
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-white dark:bg-gray-900 antialiased" id="team">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+            <div class="flex flex-col gap-8 sm:gap-12 xl:gap-16 xl:flex-row xl:items-start">
+                <div>
+                    <h2
+                        class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                        Our Team – Experience That Counts
+                    </h2>
+                    <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                        With years of experience in the construction machinery sector, we bring deep expertise and
+                        practical solutions to every project.
+                    </p>
+                    <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                        You will collaborate with experts who understand the challenges of the industry and develop
+                        innovative approaches for long-term value creation.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" title=""
+                            class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                            role="button">
+                            Learn More
+                            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid w-full grid-cols-1 gap-4 xl:max-w-3xl shrink-0 sm:grid-cols-2 md:grid-cols-3">
+                    <!-- Andreas -->
+                    <div class="relative overflow-hidden rounded-lg group">
+                        <img class="object-cover w-full h-[320px] lg:h-auto scale-100 ease-in duration-300 group-hover:scale-125"
+                            src="https://cat-machinery.s3.eu-central-1.amazonaws.com/andreas.png" alt="Andreas">
+                        <div
+                            class="absolute inset-0 grid items-end justify-center p-4 bg-gradient-to-b from-transparent to-black/60">
+                            <div class="text-center">
+                                <p class="text-xl font-bold text-white">
+                                    Andreas
+                                </p>
+                                <p class="text-base font-medium text-gray-300">
+                                    Managing Director
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stefan -->
+                    <div class="relative overflow-hidden rounded-lg group">
+                        <img class="object-cover w-full h-[320px] lg:h-auto scale-100 ease-in duration-300 group-hover:scale-125"
+                            src="https://cat-machinery.s3.eu-central-1.amazonaws.com/stefan.png" alt="Stefan">
+                        <div
+                            class="absolute inset-0 grid items-end justify-center p-4 bg-gradient-to-b from-transparent to-black/60">
+                            <div class="text-center">
+                                <p class="text-xl font-bold text-white">
+                                    Stefan
+                                </p>
+                                <p class="text-base font-medium text-gray-300">
+                                    Sales Management CEE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder for New Partner -->
+                    <div
+                        class="relative overflow-hidden rounded-lg group bg-gray-200 h-[320px] lg:h-auto flex items-center justify-center">
+                        <div class="text-center">
+                            <!-- Larger "+" Icon -->
+                            <svg class="w-48 h-20 text-gray-500 group-hover:text-gray-700 transition ease-in-out duration-300"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <p class="text-xl font-bold text-gray-700 mt-4">
+                                You Could Be Here
+                            </p>
+                            <p class="text-base font-medium text-gray-500">
+                                Looking for Sales Partners
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="bg-white dark:bg-gray-900" id="contact">
+        <div
+            class="bg-[url('https://flowbite.s3.amazonaws.com/blocks/marketing-ui/contact/laptop-human.jpg')] bg-no-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply">
+            <div class="px-4 lg:pt-24 pt-8 pb-72 lg:pb-80 mx-auto max-w-screen-sm text-center lg:px-6">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Contact Us</h2>
+                <p class="mb-16 font-light text-gray-400 sm:text-xl">Interested in purchasing used machinery? Let us
+                    help you find the right equipment for your needs.</p>
+            </div>
+        </div>
+        <div class="py-16 px-4 mx-auto -mt-96 max-w-screen-xl sm:py-24 lg:px-6">
+            <form action="#"
+                class="grid grid-cols-1 gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700 sm:grid-cols-2">
+                <div>
+                    <label for="first-name"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
+                    <input type="text" id="first-name"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="John" required>
+                </div>
+                <div>
+                    <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
+                        Name</label>
+                    <input type="text" id="last-name"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Doe" required>
+                </div>
+                <div>
+                    <label for="company-name"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company Name
+                        (optional)</label>
+                    <input type="text" id="company-name"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Your company name">
+                </div>
+                <div>
+                    <label for="country"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
+                    <input type="text" id="country"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Your country" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@example.com" required>
+                </div>
+                <div>
+                    <label for="phone-number"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone Number</label>
+                    <input type="number" id="phone-number"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="+12 345 6789" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Leave a message about the machinery you're interested in..."></textarea>
+                    <p class="mt-4 text-sm text-gray-500">By submitting this form you agree to our <a href="#"
+                            class="text-blue-500 hover:underline dark:text-primary-500">terms and conditions</a> and
+                        our <a href="#" class="text-blue-500 hover:underline dark:text-primary-500">privacy
+                            policy</a>, which explains how we may collect, use, and disclose your personal information
+                        including to third parties.</p>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-gray-700 rounded-lg bg-blue-400 sm:w-fit hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+            <div class="space-y-8 text-center md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div
+                        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
+                        <svg class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <p class="mb-2 text-xl font-bold dark:text-white">Email us:</p>
+                    <p class="mb-3 text-gray-500 dark:text-gray-400">For inquiries about our used machinery and
+                        equipment.</p>
+                    <a href="mailto:sales@techmotion-gps.com"
+                        class="font-semibold text-primary-600 dark:text-primary-500 hover:underline">sales@techmotion-gps.com</a>
+                </div>
+                <div>
+                    <div
+                        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
+                        <svg class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="mb-2 text-xl font-bold dark:text-white">Call us:</p>
+                    <p class="mb-3 text-gray-500 dark:text-gray-400">Speak to a member of our team regarding our
+                        available used machines.</p>
+                    <span class="font-semibold text-primary-600 dark:text-primary-500">+43 (646) 786-5060</span>
+                </div>
+                <div>
+                    <div
+                        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
+                        <svg class="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <p class="mb-2 text-xl font-bold dark:text-white">Support</p>
+                    <p class="mb-3 text-gray-500 dark:text-gray-400">For support with our used machines or inquiries
+                        about availability.</p>
+                    <a href="#"
+                        class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">Support
+                        center</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies
+    <div id="banner" tabindex="-1" aria-hidden="false"
+        class="overflow-y-auto overflow-x-hidden fixed z-50 w-full md:inset-0 h-modal md:h-full">
+        <div class="relative w-full h-full md:h-auto">
+            <div class="relative bg-white shadow dark:bg-gray-800">
+                <div class="justify-between items-center p-5 lg:flex">
+                    <p class="mb-4 text-sm text-gray-500 dark:text-white lg:mb-0">
+                        We use our own cookies as well as third-party cookies on our websites to enhance your
+                        experience, analyze our traffic, and for security and marketing. Select "Accept All" to allow
+                        them to be used. Read our <a href="#"
+                            class="font-medium text-gray-900 hover:underline dark:text-white">Cookie Policy</a>.
+                    </p>
+                    <div class="items-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex lg:pl-10 shrink-0">
+                        <a href="#" class="text-sm text-primary-600 dark:text-primary-500 hover:underline">Manage
+                            settings</a>
+                        <button id="block-cookies" type="button"
+                            class="py-2 px-4 w-full text-sm font-medium text-center text-gray-700 rounded-lg bg-blue-400 sm:w-auto hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Block
+                            all cookies</button>
+                        <button id="accept-cookies" type="button"
+                            class="py-2 px-4 w-full text-sm font-medium text-center text-gray-700 rounded-lg bg-blue-400 sm:w-auto hover:bg-yellow-500  focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Accept
+                            all</button>
+                        <button id="close-modal" type="button"
+                            class="hidden md:flex text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+    <!-- SCRIPT Banner -->
+    <script>
+        const banner = document.getElementById('banner');
+        const header = document.getElementById('header');
+        const closeBanner = document.getElementById('close-banner');
+
+        function adjustHeaderMargin() {
+            const bannerHeight = banner.offsetHeight;
+            header.style.marginTop = bannerHeight + 'px';
+        }
+
+        function resetHeaderMargin() {
+            header.style.marginTop = '0';
+        }
+
+        // Adjust margin when the banner appears
+        adjustHeaderMargin();
+
+        // Close banner and reset header margin
+        closeBanner.addEventListener('click', () => {
+            banner.style.display = 'none';
+            resetHeaderMargin();
+        });
+
+        // Optional: Adjust header margin on window resize
+        window.addEventListener('resize', adjustHeaderMargin);
+    </script>
+
+    <!-- SCRIPT Header -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-blue-400');  // Add class to change background color
+            } else {
+                header.classList.remove('bg-blue-400');  // Remove class when scrolled back to top
+            }
+        });
+    </script>
+
+    <!-- Script Cookies -->
+
+    <script>
+
+        const bannerEl = document.getElementById('banner');
+        const banner = new Modal(bannerEl, {
+            placement: 'bottom-left'
+        });
+
+        banner.show();
+
+        const closeModalEl = document.getElementById('close-modal');
+        closeModalEl.addEventListener('click', function () {
+            banner.hide();
+        });
+
+        const acceptCookiesEl = document.getElementById('accept-cookies');
+        acceptCookiesEl.addEventListener('click', function () {
+            // handle cookie accept
+            alert('cookies accepted');
+            banner.hide();
+        });
+
+        const blockCookiesEl = document.getElementById('block-cookies');
+        blockCookiesEl.addEventListener('click', function () {
+            // handle cookie block
+            alert('cookies blocked');
+            banner.hide();
+        });
+    </script>
+
+
+
+</body>
+
+<!-- footer -->
+<footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl text-center">
+        <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+            <li>
+                <a href="/docs/imprint.html" class="mr-4 hover:underline md:mr-6">Imprint</a>
+            </li>
+            <li>
+                <a href="/docs/privacypolicy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="/docs/t&c.html" class="mr-4 hover:underline md:mr-6">Terms and Conditions</a>
+            </li>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"
+                class="hover:underline">CAT Machinery EU</a>.</span>
+    </div>
+
+
+
+</footer>
+
+</html>
